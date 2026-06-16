@@ -1,0 +1,129 @@
+body {
+    font-family: Bahnschrift, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.navbar-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.navbar-content h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 800;
+    color: #111517;
+}
+
+.controls-container {
+    max-width: 1280px;
+    margin: 0 auto 40px auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.search-box {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    width: 100%;
+    max-width: 440px;
+    height: 50px;
+}
+
+.search-box i {
+    color: #848484;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    color: #111517;
+}
+
+.filter-boxes {
+    display: flex;
+    gap: 20px;
+}
+
+.filter-boxes select {
+    background-color: #ffffff;
+    color: #111517;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 14px;
+    cursor: pointer;
+    min-width: 180px;
+}
+
+#countries {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.country-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.country-card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-family: Bahnschrift, sans-serif ;
+}
+
+.country-card p {
+    margin: 4px 0;
+    font-size: 18px;
+    font-family: calibri, sans-serif;
+}
+
+.countryflag {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    #countries {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

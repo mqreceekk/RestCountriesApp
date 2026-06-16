@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Rest Countries</title>
+
+
+    <!-- Jako inspiraci jsem použil obrázek z frontendmentoru, protože se mi žádný ai návrh moc nelíbíl. Doufám že to nevadí :). Přeji hezký zbytek dne/večera. -->
+</head>
+<body>
+<header class="navbar">
+    <div class="navbar-content">
+        <h1>Where in the World?</h1>
+    </div>
+</header>
+
+<div class="controls-container">
+    <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search-input" placeholder="Search for a country...">
+    </div>
+
+    <div class="filter-boxes">
+        <select id="region-filter">
+            <option value="">Filter by Region</option>
+            <option value="africa">Africa</option>
+            <option value="americas">Americas</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="oceania">Oceania</option>
+        </select>
+
+        <select id="sort-select">
+            <option value="">Sort by</option>
+            <option value="name-asc">Name (A-Z)</option>
+            <option value="name-desc">Name (Z-A)</option>
+            <option value="pop-desc">Population (High-Low)</option>
+            <option value="pop-asc">Population (Low-High)</option>
+        </select>
+    </div>
+</div>
+
+    <div class="page-container">
+      <div class="page-header">
+
+      </div>
+      <div class="page-filters">
+
+      </div>
+      <div id="countries" class="countries-container">
+
+      </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
